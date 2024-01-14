@@ -1,0 +1,2 @@
+Bevyでdynamic_linkingを有効にしたプロジェクトのテンプレートです．
+※Rustのnightly版をインストールしている必要があります.

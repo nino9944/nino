@@ -4,15 +4,15 @@
         {
             "type": "lldb",
             "request": "launch",
-            "name": "Debug executable 'bevy_project'",
+            "name": "Debug executable 'nino'",
             "cargo": {
                 "args": [
                     "build",
-                    "--bin=bevy_project",
-                    "--package=bevy_project"
+                    "--bin=nino",
+                    "--package=nino"
                 ],
                 "filter": {
-                    "name": "bevy_project",
+                    "name": "nino",
                     "kind": "bin"
                 }
             },

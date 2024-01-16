@@ -31,5 +31,11 @@ fn main() {
         .add_plugins(ScreenDiagnosticsPlugin::default()) //FPS計測プラグイン
         .add_plugins(ScreenFrameDiagnosticsPlugin) //FPS表示プラグイン
         //以上は固定
+        .add_systems(Startup, set_camera)
         .run();
+}
+#[derive(Component)]
+struct MainCamera;
+fn set_camera(mut commands: Commands) {
+    commands.spawn((MainCamera, Camera2dBundle { ..default() }));
 }
